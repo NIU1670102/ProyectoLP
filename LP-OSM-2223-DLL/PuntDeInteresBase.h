@@ -9,11 +9,11 @@ class PuntDeInteresBase {
 		Coordinate m_coord;
 		std::string m_name;
 	protected:
-		std::string wheelchair;
+		std::string m_wheelchair;
 
 	public:		
 		PuntDeInteresBase();
-		PuntDeInteresBase(Coordinate coord, std::string name, std::string wheelchair) : m_coord(coord), m_name(name), wheelchair(wheelchair) {};
+		PuntDeInteresBase(Coordinate coord, std::string name, std::string wheelchair) : m_coord(coord), m_name(name), m_wheelchair(wheelchair) {};
 
 		virtual std::string getName();
 		Coordinate getCoord();

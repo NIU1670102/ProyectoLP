@@ -3,15 +3,15 @@
 
 unsigned int PuntDeInteresRestaurantSolucio::getColor()
 {
-    if (cuisine == "pizza" && wheelchair == "yes") {
+    if (m_cuisine == "pizza" && m_wheelchair == "yes") {
         return 0x03FCBA;
     }
 
-    if (cuisine == "chinese") {
+    if (m_cuisine == "chinese") {
         return 0xA6D9F7;
     }
 
-    if (wheelchair == "yes") {
+    if (m_wheelchair == "yes") {
         return 0x251351;
     }
 

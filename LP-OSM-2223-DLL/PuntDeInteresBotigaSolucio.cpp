@@ -3,16 +3,16 @@
 
 unsigned int PuntDeInteresBotigaSolucio::getColor()
 {
-    if (shop == "supermarket") {
+    if (m_shop == "supermarket") {
         return 0xA5BE00;
     }
 
-    if (shop == "tobacco") {
+    if (m_shop == "tobacco") {
         return 0xFFAD69;
     }
 
-    if (shop == "bakery") {
-        if (opening_hours.find("06:00-22:00") && wheelchair == "yes") {
+    if (m_shop == "bakery") {
+        if (m_opening_hours.find("06:00-22:00") && m_wheelchair == "yes") {
             return 0x4CB944;
         }
         return 0xE85D75;

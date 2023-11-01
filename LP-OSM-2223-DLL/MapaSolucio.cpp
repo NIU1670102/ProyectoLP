@@ -7,8 +7,19 @@
 
 void MapaSolucio::getPdis(std::vector<PuntDeInteresBase*>& puntsDeInteresBase)
 {
-	m_puntsDeInteresBase.push_back(new PuntDeInteresBotigaSolucio(Coordinate{ 41.4918606, 2.1465411 }, "La Millor Pastisseria", "no", "bakery", ""));
+	puntsDeInteresBase.push_back(new PuntDeInteresBotigaSolucio(Coordinate{ 41.4918606, 2.1465411 }, "La Millor Pastisseria", "no", "bakery", ""));
 	//amenity amb valor restaurant?
-	m_puntsDeInteresBase.push_back(new PuntDeInteresRestaurantSolucio(Coordinate{ 41.4902204, 2.1406477 }, "El Millor Restaurant", "yes", "regional"));
+	puntsDeInteresBase.push_back(new PuntDeInteresRestaurantSolucio(Coordinate{ 41.4902204, 2.1406477 }, "El Millor Restaurant", "yes", "regional"));
 
+}
+
+void MapaSolucio::getCamins(std::vector<CamiBase*>& caminsBase)
+{
+	CamiSolucio a;
+
+	caminsBase.push_back(new CamiSolucio(a.getCamiCoords()));
+}
+
+void MapaSolucio::parsejaXmlElements(std::vector<XmlElement>& xmlElements)
+{
 }

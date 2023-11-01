@@ -1,4 +1,6 @@
+#include "pch.h"
 #include "Util.h"
+
 
 double Util::m_PI = 3.141592653589793238462643383279502884L;
 double Util::m_RadiTerraX2 = static_cast<double>(2 * 6371);

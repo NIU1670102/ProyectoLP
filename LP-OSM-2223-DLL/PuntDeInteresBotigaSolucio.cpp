@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "PuntDeInteresBotigaSolucio.h"
 
+std::string PuntDeInteresBotigaSolucio::getName()
+{
+    return PuntDeInteresBase::getName();
+}
 unsigned int PuntDeInteresBotigaSolucio::getColor()
 {
     if (m_shop == "supermarket") {

@@ -85,7 +85,7 @@ void MapaRender::construeixOSM(const std::string& path_map) {
         }
     }
     else {//Aquest missatge sortirà quan encara no has fet la part del projecte que carrega el mapa
-        Util::escriuEnMonitor("No has instanciat correctament MapaBase!");
+        /*Util::escriuEnMonitor("No has instanciat correctament MapaBase!");*/
     }
 }
 

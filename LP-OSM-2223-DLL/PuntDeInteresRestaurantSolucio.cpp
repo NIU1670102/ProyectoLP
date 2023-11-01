@@ -1,6 +1,11 @@
 #include "pch.h"
 #include "PuntDeInteresRestaurantSolucio.h"
 
+std::string PuntDeInteresRestaurantSolucio::getName()
+{
+    return PuntDeInteresBase::getName();
+}
+
 unsigned int PuntDeInteresRestaurantSolucio::getColor()
 {
     if (m_cuisine == "pizza" && m_wheelchair == "yes") {

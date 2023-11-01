@@ -5,7 +5,7 @@
 class MapaSolucio : public MapaBase {
 
 public:
-	MapaSolucio();
+	MapaSolucio() {}
 
 	void getPdis(std::vector<PuntDeInteresBase*>& puntsDeInteresBase);
 	void getCamins(std::vector<CamiBase*>& caminsBase);
